@@ -1,0 +1,32 @@
+{
+  "name": "tribe",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "peter1035k <peter1035k@gmail.com>",
+  "homepage": "https://github.com/PeterByun/simple#readme",
+  "license": "ISC",
+  "main": "lib/tribe.js",
+  "typings": "lib/tribe.d.ts",
+  "directories": {
+    "src": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterByun/simple.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "tsc": "tsc",
+    "start": "echo \"TODO: implement start\" && exit 1",
+    "build": "echo \"TODO: implement build\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/PeterByun/simple/issues"
+  }
+}
