@@ -1,5 +1,10 @@
-.sp-link {
-  color: "var(--blue)";
-  cursor: pointer;
+@import "../../styles/variables/colors.scss";
+
+a.sp-link {
+  color: $color-primary-1;
   transition: color 0.15s ease-in;
+
+  &:hover {
+    color: $color-primary-2;
+  }
 }
