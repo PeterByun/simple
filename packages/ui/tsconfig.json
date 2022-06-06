@@ -2,19 +2,13 @@
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",
+    "declarationDir": "./types",
+    "emitDeclarationOnly": true,
     "sourceMap": true,
     "target": "es5",
     "module": "esnext",
     "jsx": "react-jsx",
-    "moduleResolution": "node",
-    "strict": true,
-    "noImplicitAny": true,
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "isolatedModules": true
-  }
+    "moduleResolution": "node"
+  },
+  "exclude": ["dist"]
 }

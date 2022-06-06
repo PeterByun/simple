@@ -1,1 +1,1 @@
-export { Anchor } from "./components/Anchor";
+export { Link } from "./components/link";

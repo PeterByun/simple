@@ -16,7 +16,7 @@
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "typings": "dist/esm/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "tsc": "tsc",
     "start": "rollup -c rollup.config.js -w",
@@ -45,6 +45,7 @@
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.2",
     "@types/react": "^18.0.11",
+    "rollup-plugin-dts": "^4.2.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-terser": "^7.0.2"

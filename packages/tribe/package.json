@@ -6,7 +6,7 @@
   "homepage": "https://github.com/PeterByun/simple#readme",
   "license": "ISC",
   "main": "lib/tribe.js",
-  "typings": "lib/tribe.d.ts",
+  "types": "lib/tribe.d.ts",
   "directories": {
     "src": "lib"
   },

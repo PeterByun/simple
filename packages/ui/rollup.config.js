@@ -22,6 +22,12 @@ export default {
       sourcemap: true,
       name: "simple-ui",
     },
+    {
+      input: "dist/esm/types/index.d.ts",
+      output: [{ file: "dist/index.d.ts", format: "esm" }],
+      external: [/\.css$/],
+      plugins: [dts()],
+    },
   ],
   plugins: [
     external(),

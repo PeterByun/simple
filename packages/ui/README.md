@@ -1,11 +1,15 @@
-# `ui`
+# Simple UI
 
-> TODO: description
+React UI library built with simplicity in mind.
 
-## Usage
+# Features
 
-```
-const ui = require('ui');
+## Colors
 
-// TODO: DEMONSTRATE API
-```
+## Shapes
+
+## Responsive Components
+
+## Accessibility Supports
+
+## Dark Mode
