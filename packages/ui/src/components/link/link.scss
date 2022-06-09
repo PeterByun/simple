@@ -1,10 +1,36 @@
 @import "../../styles/variables/colors.scss";
+@import "../../styles/mixins/base.scss";
 
 a.sp-link {
+  @include primary-text;
+  @include secondary-text;
+  @include shape;
+
+  &.disabled {
+    color: $color-disabled;
+    cursor: not-allowed;
+  }
+
   color: $color-primary-1;
-  transition: color 0.15s ease-in;
+
+  padding: 0.5rem 1rem;
+
+  transition: opacity 0.15s ease-in;
+
+  &.sm {
+    width: 3rem;
+    height: 1.5rem;
+  }
+  &.md {
+    width: 4rem;
+    height: 2rem;
+  }
+  &.lg {
+    width: 6rem;
+    height: 3rem;
+  }
 
   &:hover {
-    color: $color-primary-2;
+    opacity: 0.8;
   }
 }

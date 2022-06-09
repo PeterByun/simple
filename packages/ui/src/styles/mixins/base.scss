@@ -1,0 +1,73 @@
+@import "../variables/colors.scss";
+
+@mixin primary {
+  &.primary-1 {
+    background-color: $color-primary-1;
+    color: $white;
+  }
+  &.primary-2 {
+    background-color: $color-primary-2;
+    color: $white;
+  }
+  &.primary-3 {
+    background-color: $color-primary-3;
+    color: $white;
+  }
+}
+@mixin primary-text {
+  &.primary-1 {
+    color: $color-primary-1;
+  }
+  &.primary-2 {
+    color: $color-primary-2;
+  }
+  &.primary-3 {
+    color: $color-primary-3;
+  }
+}
+
+@mixin secondary {
+  &.secondary-1 {
+    background-color: $color-secondary-1;
+    color: $white;
+  }
+  &.secondary-2 {
+    background-color: $color-secondary-2;
+    color: $white;
+  }
+  &.secondary-3 {
+    background-color: $color-secondary-3;
+    color: $white;
+  }
+}
+@mixin secondary-text {
+  &.secondary-1 {
+    color: $color-secondary-1;
+  }
+  &.secondary-2 {
+    color: $color-secondary-2;
+  }
+  &.secondary-3 {
+    color: $color-secondary-3;
+  }
+}
+
+@mixin shape {
+  &.sharp {
+    border-radius: 1px;
+  }
+  &.rounded {
+    border-radius: 3px;
+  }
+  &.circle {
+    border-radius: 100%;
+  }
+}
+
+@mixin disabled {
+  &.disabled {
+    background-color: $color-disabled;
+    color: $text-color-disabled;
+    cursor: not-allowed;
+  }
+}

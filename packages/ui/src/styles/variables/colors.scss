@@ -1,24 +1,37 @@
-$bg-color-1: #ffffff;
-$bg-color-2: #ebebeb;
-$bg-color-3: #e2e2e2;
-$bg-color-4: #c9c9c9;
+// Base colors
+$white: #ffffff;
+$black: #000000;
 
-$bg-color-1-dark: #000000;
-$bg-color-2-dark: #1f1f1f;
-$bg-color-3-dark: #414141;
-$bg-color-4-dark: #636363;
+// App background colors
+$app-bg-color-1: #ffffff;
+$app-bg-color-2: #ebebeb;
+$app-bg-color-3: #e2e2e2;
+$app-bg-color-4: #c9c9c9;
 
-$text-1: #0a0a0a;
-$text-2: #202020;
-$text-3: #383838;
+$app-bg-color-1-dark: #000000;
+$app-bg-color-2-dark: #1f1f1f;
+$app-bg-color-3-dark: #414141;
+$app-bg-color-4-dark: #636363;
 
-$text-1-dark: #ffffff;
-$text-2-dark: #cacaca;
-$text-3-dark: #c2c2c2;
+// Text colors
+$text-color-1: #0a0a0a;
+$text-color-2: #202020;
+$text-color-3: #383838;
 
+$text-color-1-dark: #ffffff;
+$text-color-2-dark: #cacaca;
+$text-color-3-dark: #c2c2c2;
+
+$text-color-disabled: #ffffff;
+
+// Utility colors
 $color-primary-1: #3527f0;
 $color-primary-2: #473cda;
 $color-primary-3: #4a56c0;
+
+$color-secondary-1: #b727f0;
+$color-secondary-2: #cd3cda;
+$color-secondary-3: #c04aba;
 
 $color-info-1: #4995ec;
 $color-info-2: #458bdb;
@@ -35,3 +48,5 @@ $color-warning-3: #ff9b28;
 $color-error-1: #ff2a2a;
 $color-error-2: #f55151;
 $color-error-3: #ff6868;
+
+$color-disabled: #999999;

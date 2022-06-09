@@ -21,5 +21,19 @@ const Template = (args) => {
 export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
-  label: "Link",
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  secondary: true,
+};
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+  disabled: true,
+};
+
+export const OpenInAnotherTab = Template.bind({});
+OpenInAnotherTab.args = {
+  openNewTab: true,
 };
