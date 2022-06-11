@@ -1,0 +1,32 @@
+@import "../../styles/variables/colors.scss";
+@import "../../styles/mixins/base.scss";
+
+a.sp-button {
+  @include primary-text;
+  @include secondary-text;
+  @include shape;
+  @include disabled;
+
+  color: $color-primary-1;
+
+  padding: 0.5rem 1rem;
+
+  transition: opacity 0.15s ease-in;
+
+  &.sm {
+    width: 3rem;
+    height: 1.5rem;
+  }
+  &.md {
+    width: 4rem;
+    height: 2rem;
+  }
+  &.lg {
+    width: 6rem;
+    height: 3rem;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

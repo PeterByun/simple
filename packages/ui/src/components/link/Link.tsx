@@ -1,17 +1,18 @@
-import { LinkHTMLAttributes } from "react";
 import "./link.scss";
+import {
+  ComponentProps,
+  LinkHtmlProps,
+  ColorLevelProp,
+  Size,
+  Shape,
+} from "../../types/component-types";
+import { COLOR_NAME } from "../../constants/component-constants";
+import {
+  getColorClassNames,
+  mergeClassNames,
+} from "../../utils/component-utils";
 
-type ColorLevel = 1 | 2 | 3;
-type ColorLevelProp = boolean | ColorLevel;
-type Size = "sm" | "md" | "lg";
-type Shape = "sharp" | "rounded" | "circle";
-
-interface LinkProps {
-  // base
-  children?: React.ReactNode;
-  className?: string;
-  disabled?: boolean;
-  elementProps?: LinkHTMLAttributes<HTMLAnchorElement>;
+interface LinkProps extends ComponentProps<LinkHtmlProps> {
   // features
   href: string;
   rel?: string;
@@ -23,31 +24,6 @@ interface LinkProps {
   shape?: Shape;
   outlined?: boolean;
 }
-
-type ColorNameAndColorLevel = [string, ColorLevelProp];
-
-const COLOR_NAME = {
-  DISABLED: "disabled",
-  PRIMARY: "primary",
-  SECONDARY: "secondary",
-  OUTLINED: "outlined",
-} as const;
-
-const getColorClassName = (colorName: string, colorLevel: ColorLevelProp) => {
-  if (!colorLevel) return null;
-  return `${colorName}-${colorLevel === true ? 1 : colorLevel}`;
-};
-const getColorClassNames = (
-  colorNameAndColorLevelList: ColorNameAndColorLevel[]
-) => {
-  return colorNameAndColorLevelList.map(([colorName, colorLevel]) => {
-    return getColorClassName(colorName, colorLevel);
-  });
-};
-
-const mergeClasses = (classes: (string | null | undefined)[]) => {
-  return classes.filter((className) => typeof className === "string").join(" ");
-};
 
 export const Link = (props: LinkProps) => {
   let {
@@ -86,7 +62,7 @@ export const Link = (props: LinkProps) => {
   if (disabled) classNamesFromProps.push(COLOR_NAME.DISABLED);
   if (outlined) classNamesFromProps.push(COLOR_NAME.OUTLINED);
 
-  const classNames = mergeClasses([
+  const classNames = mergeClassNames([
     "sp-link",
     ...classNamesFromProps,
     size,
