@@ -1,29 +1,53 @@
 @import "../../styles/variables/colors.scss";
 @import "../../styles/mixins/base.scss";
 
-a.sp-button {
-  @include primary-text;
-  @include secondary-text;
+button.sp-button {
+  @include primary;
+  @include secondary;
   @include shape;
   @include disabled;
 
-  color: $color-primary-1;
+  background-color: $color-primary-1;
+  color: $white;
 
-  padding: 0.5rem 1rem;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+
+  cursor: pointer;
 
   transition: opacity 0.15s ease-in;
 
   &.sm {
     width: 3rem;
     height: 1.5rem;
+
+    &.circle {
+      height: 3rem;
+    }
   }
   &.md {
     width: 4rem;
     height: 2rem;
+
+    &.circle {
+      height: 4rem;
+    }
   }
   &.lg {
     width: 6rem;
     height: 3rem;
+    font-size: 1.2rem;
+
+    &.circle {
+      height: 6rem;
+    }
   }
 
   &:hover {
